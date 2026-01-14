@@ -33,14 +33,20 @@
             this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gerarPlanilhasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dançasTradicionaisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.todasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.correççãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.harmoniaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.interpretaççãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fecharToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.conectarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.conectarGoogleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.interpretaççãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.todasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.abrirPlanilhasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.dançasTradicionaisToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.chulaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cTGAldeiaDosAnjosPlanilhasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,7 +66,10 @@
             // arquivoToolStripMenuItem
             // 
             this.arquivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.abrirPlanilhasToolStripMenuItem,
+            this.toolStripSeparator2,
             this.gerarPlanilhasToolStripMenuItem,
+            this.toolStripSeparator1,
             this.fecharToolStripMenuItem});
             this.arquivoToolStripMenuItem.Name = "arquivoToolStripMenuItem";
             this.arquivoToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
@@ -85,6 +94,12 @@
             this.dançasTradicionaisToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
             this.dançasTradicionaisToolStripMenuItem.Text = "Danças Tradicionais";
             // 
+            // todasToolStripMenuItem
+            // 
+            this.todasToolStripMenuItem.Name = "todasToolStripMenuItem";
+            this.todasToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
+            this.todasToolStripMenuItem.Text = "Todas Planilhas";
+            // 
             // correççãoToolStripMenuItem
             // 
             this.correççãoToolStripMenuItem.Name = "correççãoToolStripMenuItem";
@@ -97,6 +112,12 @@
             this.harmoniaToolStripMenuItem.Name = "harmoniaToolStripMenuItem";
             this.harmoniaToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.harmoniaToolStripMenuItem.Text = "Harmonia";
+            // 
+            // interpretaççãoToolStripMenuItem
+            // 
+            this.interpretaççãoToolStripMenuItem.Name = "interpretaççãoToolStripMenuItem";
+            this.interpretaççãoToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
+            this.interpretaççãoToolStripMenuItem.Text = "Interpretaçção";
             // 
             // fecharToolStripMenuItem
             // 
@@ -120,21 +141,48 @@
             // 
             // sobreToolStripMenuItem
             // 
+            this.sobreToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cTGAldeiaDosAnjosPlanilhasToolStripMenuItem});
             this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
             this.sobreToolStripMenuItem.Size = new System.Drawing.Size(60, 24);
             this.sobreToolStripMenuItem.Text = "Sobre";
             // 
-            // interpretaççãoToolStripMenuItem
+            // toolStripSeparator1
             // 
-            this.interpretaççãoToolStripMenuItem.Name = "interpretaççãoToolStripMenuItem";
-            this.interpretaççãoToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
-            this.interpretaççãoToolStripMenuItem.Text = "Interpretaçção";
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(179, 6);
             // 
-            // todasToolStripMenuItem
+            // abrirPlanilhasToolStripMenuItem
             // 
-            this.todasToolStripMenuItem.Name = "todasToolStripMenuItem";
-            this.todasToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
-            this.todasToolStripMenuItem.Text = "Todas Planilhas";
+            this.abrirPlanilhasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.dançasTradicionaisToolStripMenuItem1,
+            this.chulaToolStripMenuItem});
+            this.abrirPlanilhasToolStripMenuItem.Name = "abrirPlanilhasToolStripMenuItem";
+            this.abrirPlanilhasToolStripMenuItem.Size = new System.Drawing.Size(182, 26);
+            this.abrirPlanilhasToolStripMenuItem.Text = "Abrir Planilhas";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(179, 6);
+            // 
+            // dançasTradicionaisToolStripMenuItem1
+            // 
+            this.dançasTradicionaisToolStripMenuItem1.Name = "dançasTradicionaisToolStripMenuItem1";
+            this.dançasTradicionaisToolStripMenuItem1.Size = new System.Drawing.Size(215, 26);
+            this.dançasTradicionaisToolStripMenuItem1.Text = "Danças Tradicionais";
+            // 
+            // chulaToolStripMenuItem
+            // 
+            this.chulaToolStripMenuItem.Name = "chulaToolStripMenuItem";
+            this.chulaToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
+            this.chulaToolStripMenuItem.Text = "Chula";
+            // 
+            // cTGAldeiaDosAnjosPlanilhasToolStripMenuItem
+            // 
+            this.cTGAldeiaDosAnjosPlanilhasToolStripMenuItem.Name = "cTGAldeiaDosAnjosPlanilhasToolStripMenuItem";
+            this.cTGAldeiaDosAnjosPlanilhasToolStripMenuItem.Size = new System.Drawing.Size(298, 26);
+            this.cTGAldeiaDosAnjosPlanilhasToolStripMenuItem.Text = "CTG Aldeia dos Anjos - Planilhas";
             // 
             // Home
             // 
@@ -167,6 +215,12 @@
         private System.Windows.Forms.ToolStripMenuItem harmoniaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem todasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem interpretaççãoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem abrirPlanilhasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dançasTradicionaisToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem chulaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem cTGAldeiaDosAnjosPlanilhasToolStripMenuItem;
     }
 }
 
