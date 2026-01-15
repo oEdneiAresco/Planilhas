@@ -1,4 +1,4 @@
-﻿namespace Aldeia.Mercosul.Planilhas._1._UI
+﻿namespace Aldeia.Mercosul.Planilhas.UI
 {
     partial class frmCarregarPlanilhas
     {

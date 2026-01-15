@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Aldeia.Mercosul.Planilhas._1._UI
+namespace Aldeia.Mercosul.Planilhas.UI
 {
     public partial class frmCarregarPlanilhas : Form
     {

@@ -7,8 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Aldeia.Mercosul.Planilhas.App;
 
-namespace Aldeia.Mercosul.Planilhas
+namespace Aldeia.Mercosul.Planilhas.UI
 {
     public partial class frmHome : Form
     {
@@ -20,6 +21,12 @@ namespace Aldeia.Mercosul.Planilhas
         private void correççãoToolStripMenuItem_Click(Object sender, EventArgs e)
         {
 
+        }
+
+        private void frmHome_Load(Object sender, EventArgs e)
+        {
+            GoogleConnect gooConn = new GoogleConnect();
+            MessageBox.Show(gooConn.Connect());
         }
     }
 }

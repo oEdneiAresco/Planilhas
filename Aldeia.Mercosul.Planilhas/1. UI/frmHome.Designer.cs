@@ -1,4 +1,4 @@
-﻿namespace Aldeia.Mercosul.Planilhas
+﻿namespace Aldeia.Mercosul.Planilhas.UI
 {
     partial class frmHome
     {
@@ -194,6 +194,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmHome";
             this.Text = "CTG Aldeia dos Anjos - Planilhas";
+            this.Load += new System.EventHandler(this.frmHome_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

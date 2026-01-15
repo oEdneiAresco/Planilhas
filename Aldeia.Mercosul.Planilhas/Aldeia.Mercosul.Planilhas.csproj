@@ -52,19 +52,21 @@
     <Compile Include="1. UI\frmCarregarPlanilhas.Designer.cs">
       <DependentUpon>frmCarregarPlanilhas.cs</DependentUpon>
     </Compile>
-    <Compile Include="1. UI\Home.cs">
+    <Compile Include="1. UI\frmHome.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="1. UI\Home.Designer.cs">
-      <DependentUpon>Home.cs</DependentUpon>
+    <Compile Include="1. UI\frmHome.Designer.cs">
+      <DependentUpon>frmHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="2. App\GoogleConnect.cs" />
+    <Compile Include="4. Infra\RepositorioGoogle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="1. UI\frmCarregarPlanilhas.resx">
       <DependentUpon>frmCarregarPlanilhas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="1. UI\Home.resx">
-      <DependentUpon>Home.cs</DependentUpon>
+    <EmbeddedResource Include="1. UI\frmHome.resx">
+      <DependentUpon>frmHome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -89,9 +91,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="2. Application\" />
     <Folder Include="3. Domain\" />
-    <Folder Include="4. Infra\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
