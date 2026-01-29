@@ -28,5 +28,19 @@ namespace Aldeia.Mercosul.Planilhas.UI
             GoogleConnect gooConn = new GoogleConnect();
             MessageBox.Show(gooConn.Connect());
         }
+
+        private void dançasTradicionaisToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmCarregarPlanilhas frm = new frmCarregarPlanilhas();
+
+            frm.Show();
+        }
+
+        private void todasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCarregarPlanilhas frm = new frmCarregarPlanilhas();
+
+            frm.Show();
+        }
     }
 }

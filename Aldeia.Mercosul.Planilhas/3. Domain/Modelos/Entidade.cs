@@ -8,12 +8,18 @@ namespace Aldeia.Mercosul.Planilhas.Domain
 {
     public class Entidade
     {
-        private string _entidade;
-        private string _cidade;
-        private int _regiao;
+        public string Nome { get; }
+        public string Cidade { get; }
+        public string Regiao { get; }
 
-        public string Nome { get { return _entidade; } }
-        public string Cidade { get { return _cidade; } }
-        public int Regiao { get { return _regiao; } }
+        protected Entidade(string nome, string cidade, string regiao)
+        {
+            if (string.IsNullOrWhiteSpace(nome))
+                throw new ArgumentException("Nome é obrigatório");
+
+            Nome = nome;
+            Cidade = cidade;
+            Regiao = regiao;
+        }
     }
 }

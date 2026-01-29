@@ -29,37 +29,50 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCarregarPlanilhas));
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbAbas = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // cmbAbas
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(57, 43);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(1186, 24);
-            this.comboBox1.TabIndex = 0;
+            this.cmbAbas.FormattingEnabled = true;
+            this.cmbAbas.Location = new System.Drawing.Point(12, 43);
+            this.cmbAbas.Name = "cmbAbas";
+            this.cmbAbas.Size = new System.Drawing.Size(1231, 24);
+            this.cmbAbas.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(57, 20);
+            this.label1.Location = new System.Drawing.Point(12, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(240, 17);
+            this.label1.Size = new System.Drawing.Size(238, 16);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Selecione a planilha a ser carregada";
+            this.label1.Text = "Selecione a categoria a ser carregada";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1262, 37);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(139, 35);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Gerar Planilhas";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // frmCarregarPlanilhas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1438, 688);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbAbas);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCarregarPlanilhas";
             this.Text = "CTG Aldeia dos Anjos - Planilha";
+            this.Load += new System.EventHandler(this.frmCarregarPlanilhas_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -67,7 +80,8 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbAbas;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }
