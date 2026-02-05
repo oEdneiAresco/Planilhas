@@ -1,8 +1,7 @@
 ﻿using Aldeia.Mercosul.Planilhas.UI;
+using QuestPDF.Infrastructure;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using QuestPDF.Infrastructure;
 using System.Windows.Forms;
 
 namespace Aldeia.Mercosul.Planilhas
@@ -18,6 +17,8 @@ namespace Aldeia.Mercosul.Planilhas
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmHome());
+            QuestPDF.Settings.License = LicenseType.Community;
+
         }
     }
 }

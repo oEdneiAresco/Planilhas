@@ -9,7 +9,8 @@ namespace Aldeia.Mercosul.Planilhas.Domain
 {
     public class Grupo : Entidade
     {
-        private List<string> _dancas;
+        private List<string> _dancasTexto = new List<string>();
+        private List<Danca> _dancas = new List<Danca>();
         private string _email;
         private string _responsavel;
         private string _contato;
@@ -17,20 +18,29 @@ namespace Aldeia.Mercosul.Planilhas.Domain
         public string Contato { get => _contato; set => _contato = value; }
         public string Responsavel { get => _responsavel; set => _responsavel = value; }
         public string Email { get => _email; set => _email = value; }
-        public List<string> Dancas { get => _dancas; set => _dancas = value; }
+        public IReadOnlyCollection<string> DancasTexto => _dancasTexto.AsReadOnly();
+        public string DancasStr => string.Join(" - ", _dancasTexto);
+        public IReadOnlyCollection<Danca> Dancas => _dancas.AsReadOnly();
+
 
         public Grupo(string nomeEntidade, string cidade, string regiao, string responsavel,  
-                    string email, string contato, string dancas) : base(nomeEntidade, cidade, regiao)
+                    string email, string contato, string dancasStr) : base(nomeEntidade, cidade, regiao)
         {
             Contato = contato;
             Responsavel = responsavel;
-            Dancas = CriaListaDancas(dancas);
             Email = email;
+            SetDancas(dancasStr);
         }
 
-        private List<string> CriaListaDancas(string dancas)
+        private void SetDancas(string dancasStr)
         {
-            return new List<string>();
+            var dancas = dancasStr
+            .Split('-', '–') // hífen normal e EN DASH
+            .Select(d => d.Trim())
+            .Where(d => !string.IsNullOrWhiteSpace(d));
+
+            _dancasTexto.AddRange(dancas);
+            _dancas.AddRange(dancas.Select(d => new Danca(d)));
         }
     }
 }

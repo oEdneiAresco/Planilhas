@@ -14,8 +14,8 @@ namespace Aldeia.Mercosul.Planilhas.Domain
 
         protected Entidade(string nome, string cidade, string regiao)
         {
-            if (string.IsNullOrWhiteSpace(nome))
-                throw new ArgumentException("Nome é obrigatório");
+            //if (string.IsNullOrWhiteSpace(nome))
+            //    throw new ArgumentException("Nome é obrigatório");
 
             Nome = nome;
             Cidade = cidade;
