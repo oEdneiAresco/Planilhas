@@ -40,7 +40,7 @@ namespace Aldeia.Mercosul.Planilhas.Domain
             .Where(d => !string.IsNullOrWhiteSpace(d));
 
             _dancasTexto.AddRange(dancas);
-            _dancas.AddRange(dancas.Select(d => new Danca(d)));
+            _dancas.AddRange(dancas.Select(d => DancaFactory.Criar(d)));
         }
     }
 }

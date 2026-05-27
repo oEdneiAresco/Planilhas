@@ -10,14 +10,18 @@ namespace Aldeia.Mercosul.Planilhas.Domain
     {
         public string Nome { get; }
 
-        public Danca(string nome)
+        public QuesitoCorrecao QuesitoCorrecao { get; }
+
+        public Danca(
+            string nome,
+            QuesitoCorrecao quesitoCorrecao)
         {
             if (string.IsNullOrWhiteSpace(nome))
-                throw new ArgumentException("Nome da dança inválido");
+                throw new ArgumentException("Nome obrigatório");
 
-            Nome = nome.Trim();
+            Nome = nome;
+            QuesitoCorrecao = quesitoCorrecao
+                ?? throw new ArgumentException("Quesito de correção obrigatório");
         }
-
-        public override string ToString() => Nome;
     }
 }

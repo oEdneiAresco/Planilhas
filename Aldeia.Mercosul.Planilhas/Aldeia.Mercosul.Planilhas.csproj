@@ -115,9 +115,17 @@
     <Compile Include="2. App\Interfaces\ILeitorPlanilhaGrupo.cs" />
     <Compile Include="2. App\Interfaces\ILeitorPlanilhaParticipante.cs" />
     <Compile Include="3. Domain\Enums\TipoAvaliacao.cs" />
+    <Compile Include="3. Domain\Factories\DancaFactory.cs" />
     <Compile Include="3. Domain\Modelos\Entidade.cs" />
     <Compile Include="3. Domain\Modelos\Grupo.cs" />
     <Compile Include="3. Domain\Modelos\Participante.cs" />
+    <Compile Include="3. Domain\Modelos\QuesitoCorrecao\Factory\QuesitoCorrecaoFactory.cs" />
+    <Compile Include="3. Domain\Modelos\QuesitoCorrecao\IQuesitoCorrecao.cs" />
+    <Compile Include="3. Domain\Modelos\QuesitoCorrecao\QuesitoCorrecao.cs" />
+    <Compile Include="3. Domain\Modelos\QuesitoCorrecao\QuesitoCorrecaoBase.cs" />
+    <Compile Include="3. Domain\Modelos\QuesitoCorrecao\Quesito\Anu\CorrecaoAnu.cs" />
+    <Compile Include="3. Domain\Modelos\QuesitoCorrecao\Quesito\Anu\HarmoniaAnu.cs" />
+    <Compile Include="3. Domain\Modelos\QuesitoCorrecao\Quesito\Anu\InterpretacaoAnu.cs" />
     <Compile Include="3. Domain\ValueObjects\Danca.cs" />
     <Compile Include="4. Infra\Excel\LeitorDeGruposExcel.cs" />
     <Compile Include="4. Infra\PDF\IPdfAvaliacaoGenerator.cs" />
