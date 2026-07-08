@@ -10,11 +10,11 @@ namespace Aldeia.Mercosul.Planilhas.Domain
     {
         public string Nome { get; }
 
-        public QuesitoCorrecao QuesitoCorrecao { get; }
+        public QuesitoAvaliacao QuesitoCorrecao { get; }
 
         public Danca(
             string nome,
-            QuesitoCorrecao quesitoCorrecao)
+            QuesitoAvaliacao quesitoCorrecao)
         {
             if (string.IsNullOrWhiteSpace(nome))
                 throw new ArgumentException("Nome obrigatório");

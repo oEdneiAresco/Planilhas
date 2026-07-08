@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Aldeia.Mercosul.Planilhas.Domain
 {
-    public class HarmoniaAnu : QuesitoCorrecaoBase
+    public class HarmoniaAnu : QuesitoAvaliacaoBase
     {
         public HarmoniaAnu() : base("Harmonia", 2) { }
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Aldeia.Mercosul.Planilhas.Domain
 {
-    public interface IQuesitoCorrecao
+    public interface IQuesitoAvaliacao
     {
         string Nome { get; }
         int Peso { get; }
