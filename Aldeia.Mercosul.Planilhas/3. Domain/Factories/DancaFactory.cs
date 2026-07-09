@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Aldeia.Mercosul.Planilhas.Domain
 {
-    public static class QuesitoAvaliacaoFactory
+    public static class DancaFactory
     {
-        public static List<IQuesitoAvaliacao> Criar(string nomeDanca)
+        public static Danca Criar(string nomeDanca)
         {
             if (string.IsNullOrWhiteSpace(nomeDanca))
                 throw new ArgumentException("Dança inválida");
@@ -23,19 +23,20 @@ namespace Aldeia.Mercosul.Planilhas.Domain
 
                 default:
                     throw new NotImplementedException(
-                        $"Tipo de dança não suportado: {nomeDanca}"
-                    );
+                        $"Tipo de dança não suportado: {nomeDanca}");
             }
         }
 
-        private static List<IQuesitoAvaliacao> CriarAnu()
+        private static Danca CriarAnu()
         {
-            return new List<IQuesitoAvaliacao>
-        {
-            new HarmoniaAnu(),
-            new CorrecaoAnu(),
-            new InterpretacaoAnu()
-        };
+            return new Danca(
+                "ANU",
+                new IQuesitoAvaliacao[]
+                {
+                new HarmoniaAnu(),
+                new CorrecaoAnu(),
+                new InterpretacaoAnu()
+                });
         }
     }
 }

@@ -9,10 +9,10 @@ namespace Aldeia.Mercosul.Planilhas.App
 {
     public class GoogleConnect
     {
-        RepositorioGoogle repoGoo = new RepositorioGoogle();
+        ////RepositorioGoogle repoGoo = new RepositorioGoogle();
 
-        public GoogleConnect() { }
+        //public GoogleConnect() { }
 
-        public string Connect() => repoGoo.ConnectToGoogle();
+        //public string Connect() => repoGoo.ConnectToGoogle();
     }
 }

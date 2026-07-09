@@ -35,12 +35,15 @@ namespace Aldeia.Mercosul.Planilhas.Domain
         private void SetDancas(string dancasStr)
         {
             var dancas = dancasStr
-            .Split('-', '–') // hífen normal e EN DASH
-            .Select(d => d.Trim())
-            .Where(d => !string.IsNullOrWhiteSpace(d));
+                .Split('-', '–')
+                .Select(d => d.Trim())
+                .Where(d => !string.IsNullOrWhiteSpace(d))
+                .ToList();
 
             _dancasTexto.AddRange(dancas);
-            _dancas.AddRange(dancas.Select(d => DancaFactory.Criar(d)));
+
+            _dancas.AddRange(
+                dancas.Select(DancaFactory.Criar));
         }
     }
 }

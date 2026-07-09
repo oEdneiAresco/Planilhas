@@ -25,8 +25,6 @@ namespace Aldeia.Mercosul.Planilhas.UI
 
         private void frmHome_Load(Object sender, EventArgs e)
         {
-            GoogleConnect gooConn = new GoogleConnect();
-            MessageBox.Show(gooConn.Connect());
         }
 
         private void dançasTradicionaisToolStripMenuItem1_Click(object sender, EventArgs e)

@@ -10,18 +10,20 @@ namespace Aldeia.Mercosul.Planilhas.Domain
     {
         public string Nome { get; }
 
-        public QuesitoAvaliacao QuesitoCorrecao { get; }
+        public IReadOnlyCollection<IQuesitoAvaliacao> Quesitos { get; }
 
         public Danca(
             string nome,
-            QuesitoAvaliacao quesitoCorrecao)
+            IEnumerable<IQuesitoAvaliacao> quesitos)
         {
             if (string.IsNullOrWhiteSpace(nome))
                 throw new ArgumentException("Nome obrigatório");
 
+            if (quesitos == null || !quesitos.Any())
+                throw new ArgumentException("A dança deve possuir pelo menos um quesito.");
+
             Nome = nome;
-            QuesitoCorrecao = quesitoCorrecao
-                ?? throw new ArgumentException("Quesito de correção obrigatório");
+            Quesitos = quesitos.ToList().AsReadOnly();
         }
     }
 }

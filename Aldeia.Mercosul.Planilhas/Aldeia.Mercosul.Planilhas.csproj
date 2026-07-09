@@ -118,7 +118,7 @@
     <Compile Include="3. Domain\Models\Entidade.cs" />
     <Compile Include="3. Domain\Models\Grupo.cs" />
     <Compile Include="3. Domain\Models\Participante.cs" />
-    <Compile Include="3. Domain\Factories\QuesitoAvaliacaoFactory.cs" />
+    <Compile Include="3. Domain\Factories\DancaFactory.cs" />
     <Compile Include="3. Domain\Quesitos\IQuesitoAvaliacao.cs" />
     <Compile Include="3. Domain\Quesitos\QuesitoAvaliacaoBase.cs" />
     <Compile Include="3. Domain\Quesitos\Anu\CorrecaoAnu.cs" />
